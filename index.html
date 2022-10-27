@@ -15,15 +15,25 @@
         let sum = 0;
         let series = "";
 
+        let squreSum = 0;
+        let squreSeries = "";
+
         for(var i = 1; i<=numberRange; i++) {
             sum += i;
+            squreSum += i*i; 
             series += i;
+            squreSeries += i*i;
             if(i == numberRange) { continue; };
             series += " + "; 
+            squreSeries += " + "; 
         }
 
         document.write(`Sum of series 1 to ${numberRange} <br />`);
-        document.write(`${series}=${sum}`);
+        document.write(`${series}=${sum}<br />`);
+
+
+        document.write(`Square sum of series 1 to ${numberRange} <br />`);
+        document.write(`${squreSeries}=${squreSum}`);
 
     </script>
     
