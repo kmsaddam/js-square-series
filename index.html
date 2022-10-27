@@ -14,6 +14,17 @@
         let numberRange = parseInt(prompt("Enter your range: "))
         let sum = 0;
         let series = "";
+
+        for(var i = 1; i<=numberRange; i++) {
+            sum += i;
+            series += i;
+            if(i == numberRange) { continue; };
+            series += " + "; 
+        }
+
+        document.write(`Sum of series 1 to ${numberRange} <br />`);
+        document.write(`${series}=${sum}`);
+
     </script>
     
 </body>
